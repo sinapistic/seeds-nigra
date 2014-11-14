@@ -20,7 +20,8 @@ module.exports = function (grunt) {
     sass: {
       dist: {
         files: {
-          'public/css/style.css': 'public/css/style.scss'
+          'public/css/style.css': 'public/css/style.scss',
+          'public/css/index.css': 'public/css/index.scss'
         }
       }
     },
@@ -76,7 +77,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'sass',
-    'develop', 
+    'develop',
     'watch'
   ]);
 };
