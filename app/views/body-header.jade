@@ -1,0 +1,12 @@
+.header
+  h1.text hi, I'm steven jencso
+  h2.text and this is my
+  nav
+    ul
+      each current, link in links
+        li
+          if current
+            p(href=link).bottom-shadow #{link}
+            .panel-tab(class="#{link}")
+          else
+            a(href=link) #{link}
