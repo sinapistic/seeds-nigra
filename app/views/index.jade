@@ -1,19 +1,16 @@
 extends layout
 
 block content
-  #overlay
-    h1= title
-    p Welcome to #{title}
+  .panel(class="#{page}")
+    each article, index in articles
+      h2= article.title
+      p= article.text
 
-    ul
-      each article in articles
-        li= article.title
-
-  canvas(id='scrawl')
+      if index !== (articles.length - 1)
+        .hr
 
 block css
   link(rel='stylesheet', href='/css/index.css')
 
 block js
-  script(src='/components/noisejs/index.js')
-  script(src='/js/index.js')
+  //script(type='text/js', src='/js/index.js')

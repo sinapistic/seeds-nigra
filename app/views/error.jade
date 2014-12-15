@@ -1,6 +1,14 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  .panel(class="#{page}")
+    h1= message
+    p= error.status
+    pre #{error.stack}
+
+block css
+  link(rel='stylesheet', href='/css/index.css')
+  //link(rel='stylesheet', href='/css/error.css')
+
+block js
+  //script(type='text/js', src='/js/error.js')

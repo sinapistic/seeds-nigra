@@ -1,10 +1,49 @@
+html {
+  font-size: 13px; }
+
+@media (max-width: 300px) {
+  html {
+    font-size: 11px; } }
+@media (min-width: 750px) {
+  html {
+    font-size: 15px; } }
+@media (min-width: 1200px) {
+  html {
+    font-size: 17px; } }
+.header {
+  font-size: 1.25rem; }
+
+.content {
+  font-size: 1rem; }
+
+.footer {
+  font-size: .75rem; }
+
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  color: #373635;
+  background: #ebe6e1; }
+
+h1, h2 {
+  font-family: "Lato", "Verdana", sans-serif; }
 
 h1 {
-  font: 18px Courier; }
+  font-size: 2.5em;
+  letter-spacing: .117em; }
+
+h2 {
+  font-size: 2em; }
+
+p {
+  font-family: "Merriweather", "Georgia", serif;
+  font-size: 1.5em; }
 
 a {
-  color: #00B7FF; }
+  color: #373635;
+  font-family: "Lato", "Verdana", sans-serif;
+  font-size: 1.5em; }
+
+.hr {
+  width: 100%;
+  border-top: 1px solid black; }
 
 /*# sourceMappingURL=style.css.map */
