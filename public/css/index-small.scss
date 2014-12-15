@@ -1,0 +1,166 @@
+body {
+  width: 80%;
+
+  margin: 0 auto;
+}
+
+nav {
+  ul {
+    padding: {
+      left: 0;
+    }
+
+    margin: 0 0 12px 0;
+
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+
+    margin: {
+       left: 1em;
+      right: 1em;
+    }
+  }
+}
+
+.bottom-shadow {
+  padding: {
+     left:.5em;
+    right:.5em;
+  }
+
+  margin: {
+      left: -.5em;
+     right: -.5em;
+    bottom: 0;
+  }
+
+  border-radius: .3em;
+
+  -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+
+	font: {
+    family: $highlight-font-stack;
+  }
+}
+
+.panel-tab {
+  height: 30px;
+
+  background: $primary-color;
+
+  border: {
+    top: 2px solid rgba(0,0,0,.2);
+  }
+
+  &.life {
+    background: $life-color;
+  }
+
+  &.work {
+    background: $work-color;
+  }
+
+  &.sandbox {
+    background: $sandbox-color;
+  }
+}
+
+.panel {
+  background: $primary-background;
+  color: $primary-color;
+
+  padding: 0 1em;
+
+  margin: {
+    top: -1em;
+  }
+
+  border: {
+    top: 3px solid $primary-color;
+    bottom: 3px solid $primary-color;
+    left: 3px solid $primary-color;
+  }
+
+  &.life {
+    border: {
+      top: 3px solid $life-color;
+      left: 3px solid $life-color;
+    }
+  }
+
+  &.work {
+    border: {
+      top: 3px solid $work-color;
+      left: 3px solid $work-color;
+    }
+  }
+
+  &.sandbox {
+    border: {
+      top: 3px solid $sandbox-color;
+      left: 3px solid $sandbox-color;
+    }
+  }
+
+  &.fourohfour {
+    margin: {
+      top: 1em;
+    }
+  }
+}
+
+.footer {
+  padding: {
+    top: 1.5em;
+    bottom: 1em;
+  }
+
+  text-align: center;
+}
+
+.header {
+  font: {
+    size: 1rem;
+  }
+}
+
+.content {
+  font: {
+    size: 1.15rem;
+  }
+}
+
+.footer {
+  font: {
+    size: 1rem;
+  }
+}
+
+h1 {
+  font: {
+    size: 1.75em;
+  }
+}
+
+h2 {
+  font: {
+    size: 1.5em;
+  }
+}
+
+p {
+  font: {
+    size: 1.25em;
+  }
+}
+
+a {
+  font: {
+    size: 1.25em;
+  }
+}

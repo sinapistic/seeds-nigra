@@ -1,0 +1,48 @@
+@media screen and (max-width:300px) {
+  body {
+    width: 95%;
+
+    margin: 0 auto;
+  }
+
+  nav {
+    ul {
+      margin: 0 0 10px 0;
+    }
+
+    li {
+      margin: {
+        left: .5em;
+        right: .5em;
+      }
+    }
+  }
+
+  .panel-tab {
+    height: 10px;
+  }
+
+  h1 {
+    font: {
+      size: 1.25em;
+    }
+  }
+
+  h2 {
+    font: {
+      size: 1.115em;
+    }
+  }
+
+  p {
+    font: {
+      size: 1.15em;
+    }
+  }
+
+  a {
+    font: {
+      size: 1.15em;
+    }
+  }
+}
