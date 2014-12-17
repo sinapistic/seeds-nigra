@@ -26,6 +26,7 @@ router.get('/', function (req, res, next) {
 
     res.render('index', {
       title: 'jenc.so',
+      page: 'life',
       links: res.links,
       articles: articles
     });
