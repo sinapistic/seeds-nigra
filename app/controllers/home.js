@@ -47,18 +47,22 @@ router.get('/:route', function (req, res, next) {
         message: '404',
         error: {status: "that page doesn't exist yet- want me to make it?"}
       });
+
+      console.log('rendered 404');
     }
 
-    else res.links[req.params.route] = true;
+    else {
+      res.links[req.params.route] = true;
 
-    res.render('index', {
-      title: 'jenc.so - ' + req.params.route,
-      page: req.params.route,
-      links: res.links,
-      articles: articles
-    });
+      res.render('index', {
+        title: 'jenc.so - ' + req.params.route,
+        page: req.params.route,
+        links: res.links,
+        articles: articles
+      });
 
-    console.log('rendered ' + req.params.route);
+      console.log('rendered ' + req.params.route);
+    }
   });
 
 });
