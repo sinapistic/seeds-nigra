@@ -1,21 +1,30 @@
 var express = require('express'),
   router = express.Router(),
   mongoose = require('mongoose'),
-  Article = mongoose.model('Article');
+  Article = mongoose.model('Article'),
+  NavLink = mongoose.model('NavLink');
 
 module.exports = function (app) {
   app.use('/', router);
 };
 
 router.use('/', function (req, res, next) {
+  NavLink.find(function(err, links) {
+    var navLinks = {};
 
-  res.links = {
-    life: false,
-    work: false,
-    sandbox: false
-  };
+    for (var i = 0; i < links.length; i++) {
+      navLinks[links[i].page] = links[i].active;
+    }
 
-  next();
+    res.links = navLinks;
+    // res.links = {
+    //   life: false,
+    //   work: false,
+    //   sandbox: false
+    // };
+
+    next();
+  });
 });
 
 router.get('/', function (req, res, next) {
