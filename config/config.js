@@ -8,8 +8,8 @@ var config = {
     app: {
       name: 'workspace'
     },
-    port: process.env.PORT,
-    db: 'mongodb://goodboy:st0rmy@linus.mongohq.com:10083/seeds-nigra'
+    port: 3000,
+    db: 'mongodb://localhost/workspace-development'
 
   },
 
